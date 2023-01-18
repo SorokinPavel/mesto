@@ -1,0 +1,9 @@
+.profile__description {
+  margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 18px;
+  line-height: 21.78px;
+  font-family:'Inter', "Arial", sans-serif;
+  font-weight: 400;
+}
