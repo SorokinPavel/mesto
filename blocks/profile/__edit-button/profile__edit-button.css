@@ -3,3 +3,12 @@
   padding: 6px;
 }
 
+@media screen and (max-width: 320px) {
+  .profile__edit-button {
+    padding: 4.25px;
+    max-width: 7.5px;
+    max-height: 7.5px;
+    margin-right: 24.25px;
+  }
+}
+

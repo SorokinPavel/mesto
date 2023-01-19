@@ -2,5 +2,26 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-basis: 880px;
+  flex-basis: 730px;
+  flex-wrap: wrap;
 }
+
+@media screen and (max-width: 879px) {
+  .profile__info-container {
+    flex-basis: 581px;
+  }
+}
+
+@media screen and (max-width: 581px) {
+  .profile__info-container {
+    flex-basis: 485px;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__info-container {
+    gap: 36px;
+  }
+}
+

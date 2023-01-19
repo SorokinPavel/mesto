@@ -1,0 +1,9 @@
+.element__group {
+  max-width: 22px;
+  max-height: 19px;
+}
+
+.element__group:hover {
+  opacity: 0.5;
+  transition: opacity .2s ease-in;
+}

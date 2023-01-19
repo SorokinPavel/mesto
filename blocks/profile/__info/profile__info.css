@@ -3,6 +3,12 @@
     grid-template-columns: minmax(auto, 294px) minmax(auto, 24px);
     grid-template-rows: auto;
     gap: 16px 18px;
-
     align-items: end;
+}
+
+@media screen and (max-width: 320px) {
+  .profile__info {
+    max-width: 282px;
+    gap: 14px 10px;
+  }
 }

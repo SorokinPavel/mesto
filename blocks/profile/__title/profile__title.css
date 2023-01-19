@@ -6,3 +6,19 @@
   font-family:'Inter',"Arial", sans-serif;
   font-weight: 500;
 }
+
+@media screen and (max-width: 731px){
+  .profile__title {
+    font-size: calc(27px + 15 * (100vw / 1280));
+  }
+}
+
+@media screen and (max-width: 320px){
+  .profile__title {
+    font-size: 27px;
+    line-height: 33px;
+    max-height: 26px;
+    max-width: 189px;
+    padding-left: 46px;
+  }
+}

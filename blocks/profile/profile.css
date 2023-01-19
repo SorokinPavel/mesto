@@ -4,3 +4,17 @@
   display: flex;
   gap: 30px;
 }
+
+@media screen and (max-width: 879px) {
+  .profile {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile {
+    margin: 42px auto 36px;
+    gap: 26px;
+  }
+}
