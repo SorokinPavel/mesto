@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Место</title>
+</head>
+<body class="body">
+  <div class="webpage">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./images/logo.svg"
+        alt="Логотип"
+      >
+    </header>
+    <main>
+      <section class="profile">
+        <img class="profile__avatar"
+          src="./images/profile-image.jpg"
+          alt="Фото профиля"
+        >
+        <div class="profile__info-container">
+          <div class="profile__info">
+            <h1 class="profile__username">Жак-Ив Кусто</h1>
+            <button type="button" class="opacity profile__edit-button"></button>
+            <p class="profile__description">Исследователь океана</p>
+          </div>
+          <button type="button" class="opacity profile__add-button"></button>
+        </div>
+      </section>
+      <section class ="elements">
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__author">&copy; 2020 Mesto Russia</p>
+    </footer>
+    <div class="popup profile-popup">
+      <div class="popup__container">
+        <button type="button" class="opacity popup__closebtn"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form name="popup-editform" method="post" action="." class="popup__form" novalidate>
+          <fieldset class="popup__set">
+          <input name="login" placeholder="Имя" class="popup__input popup__input_change_username" id="title-input"
+            minlength="2" maxlength="40" required>
+          <span class="popup__error title-input-error"></span>
+          <input name="description" placeholder="О себе" class="popup__input popup__input_change_description" id="description-input"
+            minlength="2" maxlength="200" required>
+          <span class="popup__error description-input-error" ></span>
+          <button type="submit" class="popup__button">Сохранить</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="popup addCard-popup">
+      <div class="popup__container">
+        <button type="button" class="opacity popup__closebtn"></button>
+        <h2 class="popup__title">Новое место</h2>
+        <form name="popup-addform" method="post" action="." class="popup__form" novalidate>
+          <fieldset class="popup__set">
+          <input name="post-title" class="popup__input popup__input_change_post-title" id="post-input"
+            placeholder="Название" minlength="2" maxlength="30" required>
+          <span class="popup__error post-input-error" ></span>
+          <input name="image-link" class="popup__input popup__input_change_image-link" id="link-input"
+            placeholder="Ссылка на картинку" type="url" required>
+            <span class="popup__error link-input-error" ></span>
+          <button type="submit" class="popup__button">Создать</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div class="popup image-popup">
+      <figure class="image-popup__container">
+        <button type="button" class="opacity popup__closebtn"></button>
+        <img class="image-popup__image" alt="">
+        <figcaption class="image-popup__caption"></figcaption>
+      </figure>
+    </div>
+    <template id="card-template">
+      <article class="element">
+        <button type="button" class="opacity element__trash"></button>
+        <img class="element__mask-group" alt="" src="">
+        <div class="element__title-container">
+          <h2 class="element__title"></h2>
+          <button type="button" class="element__group"></button>
+        </div>
+      </article>
+    </template>
+  </div>
+  <script src="./scripts/cards.js" defer></script>
+  <script defer src="./scripts/validate.js"></script>
+  <script src="./scripts/index.js" type="module" defer></script>
+</body>
+</html>

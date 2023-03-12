@@ -1,0 +1,15 @@
+.element__group {
+  background-color: white;
+  background-image: url(../../../images/like.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 9.5px 11px;
+  border: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  transition: opacity .2s ease-in;
+}
+
+.element__group:hover {
+  opacity: 0.5;
+}
